@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <string.h>
 
-#define BUFSIZE 24
+#define BUFSIZE 32
 int main() {
   char buf1[BUFSIZE];
-  char buf2[BUFSIZE] = "\"><script>alert</script>";
+  char buf2[BUFSIZE] = "\"><script>alert()</script>";
   char * buf3 = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
   strncpy(buf1, buf3, 24);
   printf("%s\n", buf1);
