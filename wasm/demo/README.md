@@ -1,7 +1,7 @@
-Demo(Memory inspect) page
-<br>https://raijp.github.io/wasm/demo/demo-cpp.html
+# Demo(Memory inspect) page
+https://raijp.github.io/wasm/demo/demo-cpp.html
 
-Compilation:
+# Compilation:
 ```
 git clone https://github.com/raijp/raijp.github.io.git && cd raijp.github.io/wasm/demo
 
@@ -12,7 +12,7 @@ docker run \
   emscripten/emsdk \
   emcc -g -s ALLOW_MEMORY_GROWTH -fdebug-compilation-dir='.' demo-cpp.cc -o demo-cpp.html
 ```
-<br>Reference:
+# Reference:
 <br>1. https://developer.chrome.com/blog/wasm-debugging-2020/
 <br>2. https://memory-inspector.glitch.me/demo-cpp.html
 <br>3. https://www.youtube.com/watch?v=VBMHswhun-s&list=WL&index=26&t=459s
