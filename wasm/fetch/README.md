@@ -1,5 +1,5 @@
 # Demo page
-https://raijp.github.io/wasm/fetch/dist/_1.html
+https://raijp.github.io/wasm/fetch/dist/test01.html
 
 # Compilation:
 ```
@@ -11,5 +11,5 @@ docker run \
   -v $(pwd):/src \
   -u $(id -u):$(id -g) \
   emscripten/emsdk \
-  emcc -g -s ALLOW_MEMORY_GROWTH -fdebug-compilation-dir='..' -sFETCH _1.c -o dist/_1.html
+  emcc -g -s ALLOW_MEMORY_GROWTH -fdebug-compilation-dir='..' -sFETCH test01.c -o dist/test01.html
 ```
