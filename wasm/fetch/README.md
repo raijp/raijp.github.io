@@ -13,3 +13,9 @@ docker run \
   emscripten/emsdk \
   emcc -g -s ALLOW_MEMORY_GROWTH -fdebug-compilation-dir='..' -sFETCH test01.c -o dist/test01.html
 ```
+```
+cat << EOF > dist/myfile.dat
+Hellow there!
+This is content of myfile.dat
+EOF
+```
