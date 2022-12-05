@@ -1,3 +1,5 @@
+# Demo page
+https://raijp.github.io/wasm/fetch/dist/_1.html
 
 # Compilation:
 ```
