@@ -1,5 +1,5 @@
 # Demo(Memory inspect) page
-https://raijp.github.io/wasm/demo/dist/demo-cpp.html
+https://raijp.github.io/wasm/demo/dist/demo-cpp.html or http://localhost/raijp.github.io/wasm/demo/dist/demo-cpp.html
 
 # Compilation:
 ```
