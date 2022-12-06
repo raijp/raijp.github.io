@@ -1,3 +1,9 @@
+# Demo page
+https://raijp.github.io
+<br>or
+<br>http://localhost/raijp.github.io
+
+# Run
 ```
 git clone https://github.com/raijp/raijp.github.io.git && cd raijp.github.io
 ```
