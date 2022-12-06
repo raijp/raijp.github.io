@@ -11,5 +11,5 @@ docker run \
   -v $(pwd):/src \
   -u $(id -u):$(id -g) \
   emscripten/emsdk \
-  emcc -g -s ALLOW_MEMORY_GROWTH -fdebug-compilation-dir='..' index.c -o dist/index.html
+  emcc -g -s ALLOW_MEMORY_GROWTH -fdebug-compilation-dir='..' index.c -o index.html
 ```

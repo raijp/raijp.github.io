@@ -1,5 +1,5 @@
 # Demo page
-https://raijp.github.io/wasm/fetch/dist/test01.html or  http://localhost/raijp.github.io/wasm/fetch/dist/test01.html
+https://raijp.github.io/wasm/fetch/dist/ or  http://localhost/raijp.github.io/wasm/fetch/dist/
 
 # Run:
 ```
@@ -11,7 +11,7 @@ docker run \
   -v $(pwd):/src \
   -u $(id -u):$(id -g) \
   emscripten/emsdk \
-  emcc -g -s ALLOW_MEMORY_GROWTH -fdebug-compilation-dir='..' -sFETCH test01.c -o dist/test01.html
+  emcc -g -s ALLOW_MEMORY_GROWTH -fdebug-compilation-dir='..' -sFETCH index.c -o dist/index.html
 ```
 ```
 cat << EOF > dist/myfile.dat
