@@ -1,5 +1,5 @@
 # Demo page
-https://raijp.github.io/wasm/fetch/dist/test01.html
+https://raijp.github.io/wasm/fetch/dist/test01.html or  or http://localhost/raijp.github.io/wasm/fetch/dist/test01.html
 
 # Compilation:
 ```
