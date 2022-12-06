@@ -11,9 +11,19 @@ docker run \
   -v $(pwd):/src \
   -u $(id -u):$(id -g) \
   emscripten/emsdk \
-  emcc -g -s ALLOW_MEMORY_GROWTH -fdebug-compilation-dir='..' index.c -o dist/index.html -sEXPORTED_RUNTIME_METHODS=ccall,cwrap -sEXPORTED_FUNCTIONS=_main,_test
+  emcc -g -s ALLOW_MEMORY_GROWTH -fdebug-compilation-dir='..' \
+  index.c -o dist/index.html \
+  -sEXPORTED_RUNTIME_METHODS=ccall,cwrap,getValue,setValue,UTF8ToString,stringToUTF8 \
+  -sEXPORTED_FUNCTIONS=_main,_test01
 ```
 # Copy and paste below into devtools
 ```
-Module.ccall('test', 'number', ['number'], [10])
+Module.setValue(0, 1111, 'i32');
+Module.ccall('test01', 'number', ['number'], [0])
+Module.getValue(0, 1111, 'i32');
+```
+```
+Module.UTF8ToString(1);
+Module.stringToUTF8("abcdefghijklmn", 4, 20);
+Module.UTF8ToString(4);
 ```

@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <string.h>
 
-int test(int * i) {
-  char * str = "Here is in test()";
+int test01(int * i) {
+  char * str = "Here is in test01()";
   printf("%s\n", str);
-  printf("%d\n", i[0]);
+  printf("%p\n", i);
   return i[0];
 }
 

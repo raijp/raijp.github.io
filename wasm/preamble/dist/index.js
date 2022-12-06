@@ -1476,6 +1476,8 @@ var ASM_CONSTS = {
         return ccall(ident, returnType, argTypes, arguments, opts);
       }
     }
+
+
 var ASSERTIONS = true;
 
 function checkIncomingModuleAPI() {
@@ -1490,7 +1492,7 @@ var asm = createWasm();
 var ___wasm_call_ctors = Module["___wasm_call_ctors"] = createExportWrapper("__wasm_call_ctors");
 
 /** @type {function(...*):?} */
-var _test = Module["_test"] = createExportWrapper("test");
+var _test01 = Module["_test01"] = createExportWrapper("test01");
 
 /** @type {function(...*):?} */
 var _main = Module["_main"] = createExportWrapper("main");
@@ -1544,14 +1546,16 @@ var dynCall_jiji = Module["dynCall_jiji"] = createExportWrapper("dynCall_jiji");
 
 // === Auto-generated postamble setup entry stuff ===
 
+Module["UTF8ToString"] = UTF8ToString;
+Module["stringToUTF8"] = stringToUTF8;
 Module["ccall"] = ccall;
 Module["cwrap"] = cwrap;
+Module["setValue"] = setValue;
+Module["getValue"] = getValue;
 var unexportedRuntimeSymbols = [
   'run',
   'UTF8ArrayToString',
-  'UTF8ToString',
   'stringToUTF8Array',
-  'stringToUTF8',
   'lengthBytesUTF8',
   'addOnPreRun',
   'addOnInit',
@@ -1660,8 +1664,6 @@ var unexportedRuntimeSymbols = [
   'strLen',
   'reSign',
   'formatString',
-  'setValue',
-  'getValue',
   'PATH',
   'PATH_FS',
   'intArrayFromString',
