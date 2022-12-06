@@ -1,7 +1,7 @@
 
 # Compilation:
 ```
-git clone https://github.com/raijp/raijp.github.io.git && cd raijp.github.io/wasm/tmp/
+cd raijp.github.io/wasm/tmp/
 ```
 ```
 docker run \
