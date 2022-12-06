@@ -3,7 +3,7 @@ https://raijp.github.io/wasm/fetch/dist/test01.html
 
 # Compilation:
 ```
-git clone https://github.com/raijp/raijp.github.io.git && cd raijp.github.io/wasm/fetch/
+cd raijp.github.io/wasm/fetch/
 ```
 ```
 docker run \
