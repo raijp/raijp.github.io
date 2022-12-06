@@ -1,7 +1,7 @@
 # Demo page
 https://raijp.github.io/wasm/tmp/dist/demo-cpp.html or http://localhost/raijp.github.io/wasm/tmp/dist/demo-cpp.html
 
-# Compilation:
+# Run:
 ```
 cd raijp.github.io/wasm/tmp/
 ```
