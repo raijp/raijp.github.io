@@ -1,13 +1,15 @@
 #include <stdio.h>
 #include <string.h>
 
-#define BUFSIZE 32
+int test(int * i) {
+  char * str = "Here is in test()";
+  printf("%s\n", str);
+  printf("%d\n", i[0]);
+  return i[0];
+}
+
 int main() {
-  char buf1[BUFSIZE];
-  char buf2[BUFSIZE] = "\"><script>alert()</script>";
-  char * buf3 = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
-  strncpy(buf1, buf3, BUFSIZE);
-  printf("%s\n", buf1);
-  printf("%s\n", buf2);
-  printf("%s\n", buf3);
+  char * str = "Here is in main()";
+  printf("%s\n", str);
+  return 0;
 }
