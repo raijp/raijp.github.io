@@ -1,7 +1,5 @@
 # Demo page
-https://raijp.github.io
-<br>or
-<br>http://localhost/raijp.github.io
+https://raijp.github.io or http://localhost/raijp.github.io
 
 # Run
 ```
