@@ -30,3 +30,8 @@ docker run -dit \
   -v $(pwd):/root/raijp.github.io \
   raijp/libdg
 ```
+```
+# How to use
+docker exec -it raijp-libdg /bin/bash
+clang /root/libgd-2.3.3/examples/arc.c /usr/local/lib/libgd.so -o output.o && ./output.o
+```
