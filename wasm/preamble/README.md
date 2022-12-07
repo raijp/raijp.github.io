@@ -14,13 +14,18 @@ docker run \
   emcc -g -s ALLOW_MEMORY_GROWTH -fdebug-compilation-dir='..' \
   index.c -o dist/index.html \
   -sEXPORTED_RUNTIME_METHODS=ccall,cwrap,getValue,setValue,UTF8ToString,stringToUTF8 \
-  -sEXPORTED_FUNCTIONS=_main,_test01
+  -sEXPORTED_FUNCTIONS=_main,_test01,_test02
 ```
 # Copy and paste below into devtools
 ```
 Module.setValue(0, 1111, 'i32');
 Module.ccall('test01', 'number', ['number'], [0])
 Module.getValue(0, 1111, 'i32');
+```
+Module.setValue(0, 1111, 'i32');
+Module.setValue(4, 2222, 'i32');
+Module.ccall('test02', 'number', ['number', 'number'], [0, 4])
+```
 ```
 ```
 Module.UTF8ToString(1);

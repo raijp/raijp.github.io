@@ -14,3 +14,12 @@ docker run -d \
   -v $(pwd):/usr/share/nginx/html/raijp.github.io \
   nginx
 ```
+# libgd
+```
+docker run -dit \
+  --restart unless-stopped \
+  --log-opt max-size=10m \
+  --log-opt max-file=3 \
+  -v /root/raijp.github.io:/root/raijp.github.io \
+  raijp/libdg
+```

@@ -1495,6 +1495,9 @@ var ___wasm_call_ctors = Module["___wasm_call_ctors"] = createExportWrapper("__w
 var _test01 = Module["_test01"] = createExportWrapper("test01");
 
 /** @type {function(...*):?} */
+var _test02 = Module["_test02"] = createExportWrapper("test02");
+
+/** @type {function(...*):?} */
 var _main = Module["_main"] = createExportWrapper("main");
 
 /** @type {function(...*):?} */
