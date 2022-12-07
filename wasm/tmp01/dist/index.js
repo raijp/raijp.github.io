@@ -1437,10 +1437,16 @@ var asm = createWasm();
 var ___wasm_call_ctors = Module["___wasm_call_ctors"] = createExportWrapper("__wasm_call_ctors");
 
 /** @type {function(...*):?} */
-var _test = Module["_test"] = createExportWrapper("test");
+var _test01 = Module["_test01"] = createExportWrapper("test01");
 
 /** @type {function(...*):?} */
-var _test01 = Module["_test01"] = createExportWrapper("test01");
+var _test02 = Module["_test02"] = createExportWrapper("test02");
+
+/** @type {function(...*):?} */
+var _test03 = Module["_test03"] = createExportWrapper("test03");
+
+/** @type {function(...*):?} */
+var _test04 = Module["_test04"] = createExportWrapper("test04");
 
 /** @type {function(...*):?} */
 var ___errno_location = Module["___errno_location"] = createExportWrapper("__errno_location");
