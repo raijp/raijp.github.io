@@ -3,7 +3,10 @@ https://raijp.github.io or http://localhost/raijp.github.io
 
 # Run:
 ```
-git clone https://github.com/raijp/raijp.github.io.git && cd raijp.github.io
+git clone https://github.com/raijp/raijp.github.io.git
+```
+```
+cd raijp.github.io
 ```
 ```
 docker run -d \
@@ -16,10 +19,13 @@ docker run -d \
 ```
 # libgd
 ```
+```
+cd raijp.github.io
+```
 docker run -dit \
   --restart unless-stopped \
   --log-opt max-size=10m \
   --log-opt max-file=3 \
-  -v /root/raijp.github.io:/root/raijp.github.io \
+  -v $(pwd):/root/raijp.github.io \
   raijp/libdg
 ```
