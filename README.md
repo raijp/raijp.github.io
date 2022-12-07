@@ -19,8 +19,8 @@ docker run -d \
 ```
 # libgd
 ```
-```
 cd raijp.github.io
+```
 ```
 docker run -dit \
   --restart unless-stopped \
