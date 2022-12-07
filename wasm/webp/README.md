@@ -16,5 +16,18 @@ docker run \
   -I libwebp \
   index.c \
   libwebp/src/{dec,dsp,demux,enc,mux,utils}/*.c \
-  -o dist/index.html
+  -o dist/index.js
+```
+```
+cat << EOF > dist/index.html
+<script src="./index.js"></script>
+<script>
+  Module.onRuntimeInitialized = async () => {
+    const api = {
+      version: Module.cwrap('version', 'number', []),
+    };
+    console.log(api.version());
+  };
+</script>
+EOF
 ```
