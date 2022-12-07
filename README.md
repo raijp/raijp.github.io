@@ -23,6 +23,7 @@ cd raijp.github.io
 ```
 ```
 docker run -dit \
+  --name raijp-libdg \
   --restart unless-stopped \
   --log-opt max-size=10m \
   --log-opt max-file=3 \
