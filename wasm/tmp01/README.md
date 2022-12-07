@@ -28,3 +28,9 @@ EOF
   console.log(_());
 })();
 ```
+```
+(() => {
+  const _ = Module.cwrap('test01', 'string', []);
+  console.log(_());
+})();
+```
