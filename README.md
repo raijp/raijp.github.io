@@ -1,4 +1,4 @@
-# Demo page :
+# Demo page:
 https://raijp.github.io or http://localhost/raijp.github.io
 
 # Run:
