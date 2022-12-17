@@ -22,6 +22,9 @@ docker run -d \
 cd raijp.github.io
 ```
 ```
+docker rm -f raijp-libdg
+```
+```
 docker run -dit \
   --name raijp-libdg \
   --restart unless-stopped \
@@ -38,6 +41,9 @@ clang /root/libgd-2.3.3/examples/arc.c /usr/local/lib/libgd.so -o output.o && ./
 # wasmer
 ```
 cd raijp.github.io
+```
+```
+docker rm -f raijp-wasmer
 ```
 ```
 docker run -dit \
