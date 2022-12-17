@@ -35,3 +35,20 @@ docker run -dit \
 docker exec -it raijp-libdg /bin/bash
 clang /root/libgd-2.3.3/examples/arc.c /usr/local/lib/libgd.so -o output.o && ./output.o
 ```
+# wasmer
+```
+cd raijp.github.io
+```
+```
+docker run -dit \
+  --name raijp-wasmer \
+  --restart unless-stopped \
+  --log-opt max-size=10m \
+  --log-opt max-file=3 \
+  -v $(pwd):/root/raijp.github.io \
+  raijp/wasmer
+```
+```
+# How to use
+docker exec -it raijp-wasmer /bin/bash
+```
