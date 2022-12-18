@@ -16,5 +16,5 @@ docker run \
   -t \
   -v $(pwd):/src \
   raijp/wasmer \
-  /root/.wasmer/bin/./wasmer /src/dist/index.wasm
+  /root/.wasmer/bin/./wasmer dist/index.wasm
 ```
