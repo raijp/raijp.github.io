@@ -9,7 +9,9 @@
 //  console.log(e);
 //  history.forward(1);
 //});
-history.forward(1);
+window.addEventListener('load', (e) => {
+  setTimeout(() => {history.forward(1)}, 0);
+}
 </script>
 
 This is a.html<br>
