@@ -1,0 +1,14 @@
+<script>
+// Function to navigate to a new state
+history.pushState({ id: 1 }, `Unused`, location.href);
+  
+// Add event listener for popstate
+window.addEventListener('popstate', (e) => {
+  console.log(`popstate`);
+  console.log(e);
+  history.forward(1);
+});
+</script>
+
+This is a.html
+<a href="b.html">b.html</a>
